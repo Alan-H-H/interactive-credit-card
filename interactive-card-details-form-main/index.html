@@ -38,7 +38,7 @@
     <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="card-number">
     <p>Wrong Format, numbers only</p>
   </div>
-  <label> DATE (MM/YY)</label>
+  <label> DATE (MM/YY)</label><label>CVC</label>
   <div class="one">
   <div class="date-confirm" id="dateEl" >
     <input type="number" placeholder="MM" id="card-month">
@@ -46,8 +46,10 @@
     <p>Can´t be blank</p>
   </div>
 
-  <label>CVC</label>
-  <div class="cvcEl" id="cvcEl"><input type="number" placeholder="e.g. 123" id="card-cvc"><p>Can´t be blank</p></div>
+  
+  <div class="cvcEl" id="cvcEl">
+    <input type="number" placeholder="e.g. 123" id="card-cvc">
+    <p>Can´t be blank</p></div>
   </div>
   </form>
   <button onclick="sendCard()">Confirm</button>
