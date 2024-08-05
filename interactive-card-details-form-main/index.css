@@ -1,0 +1,256 @@
+body{
+    font-family: 'Space Grotesk';
+    width: 100%;
+    color: hsl(278, 68%, 11%);
+    margin: 0;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+}
+
+.inputs{
+    width: 50%;
+    margin-top: 25em;
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.inputs button{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 310px;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+}
+
+.prints{
+    width: 35%;
+    height: 2000px;
+    float: left;
+    background: url("images/bg-main-desktop.png");
+    background-size: 100% auto; 
+}
+
+#card-holder{
+    width: 300px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+#card-number{
+    width: 300px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+.cardNum-confirm p{
+    display: none;
+}
+
+.cardNum-rejected p{
+    display: flex;
+    color: hsl(0, 100%, 66%);
+}
+
+#card-month{
+    width: 10%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+#card-year{
+    width: 10%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+#card-cvc{
+    width: 40%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+.date-confirm p{
+    display: none;
+} 
+
+.date-reject p{
+    display: flex;
+    color: hsl(0, 100%, 66%);
+}
+
+.cvcEl p{
+    display: none;
+}
+
+.cvcElerr p{
+    display: flex;
+    color: hsl(0, 100%, 66%);
+}
+
+.container-hide{
+    display: none;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-front{
+    margin-top: 3em;
+    margin-left: 27em;
+    background: url("images/bg-card-front.png");
+    width: 440px;
+    border-radius: 0.5em;
+    height: 240px;
+    color: white;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+}
+
+.card-back{
+    margin-top: 3em;
+    margin-left: 33em;
+    background: url("images/bg-card-back.png");
+    width: 440px;
+    border-radius: 0.5em;
+    height: 240px;
+    color: black;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+    display: flex;
+}
+
+.card-back span{
+    margin-top: 10em;
+    margin-left: 30em;
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 3em;
+}
+
+.Column h1{
+    margin-top: 5em;
+}
+
+.card-front div{
+    color: white;
+}
+
+#success{
+    width: 100%;
+    margin-top: 25em;
+    display: flex;
+    flex-direction: column;
+    color: hsl(278, 68%, 11%);
+    text-align: center;
+    align-items: center;
+}
+
+#success h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#success p{
+    color: lightgray;
+}
+
+#success button{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    padding: 0.5em 6em;
+}
+
+@media(width <= 1000px ){
+    .container{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 100;
+        margin-top: 10em;
+    }
+    .inputs{
+        width: 100%;
+        margin-top: -5em;
+        font-size: 13px;
+        margin-left: 3em;
+    }
+    .prints{
+        width: 350px;
+        height: 200px;
+        margin-bottom: 6em;
+        margin-top: -25em;
+        position: fixed;
+        z-index: 70;
+    }
+    .card-front{
+        margin-top: 14em;
+        margin-left: 1em;
+        width: 280px;
+        height: 160px;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 10px;
+        z-index: 100;
+        position: fixed;
+    }
+    
+    .card-back{
+        margin-top: 1em;
+        margin-left: 5em;
+        width: 280px;
+        height: 160px;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 10px;
+        z-index: 90;
+        position: fixed;
+    }
+    .date-reject p{
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+    .cvcElerr p{
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+    .cardNum-rejected p{
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+    #success{
+        width: 350px;
+        margin-top: 15em;
+}
+}
