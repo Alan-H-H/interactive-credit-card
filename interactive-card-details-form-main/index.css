@@ -96,6 +96,14 @@ body{
     color: hsl(0, 100%, 66%);
 }
 
+#cvcEl{
+    margin-left: -5em;
+}
+
+.cvcEl{
+    margin-left: -5em;
+}
+
 .cvcEl p{
     display: none;
 }
